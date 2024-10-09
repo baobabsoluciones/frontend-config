@@ -286,13 +286,10 @@ export default {
   },
   methods: {
     async submitLogIn() {
-      // TODO: Implement login
-      // const isAuthenticated = await AuthService.login(
-      //   this.username,
-      //   this.password,
-      // )
-      const isAuthenticated = true
-      sessionStorage.setItem('isAuthenticated', 'true')
+      const isAuthenticated = await AuthService.login(
+        this.username,
+        this.password,
+      )
 
       if (isAuthenticated) {
         this.$router.push('/')
