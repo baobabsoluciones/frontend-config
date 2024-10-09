@@ -6,15 +6,14 @@
 </template>
 
 <script>
-import { provide } from 'vue';
-import { snackbar, showSnackbar } from '@/services/SnackbarService.ts';
+import { provide } from 'vue'
+import { snackbar, showSnackbar } from '@/services/SnackbarService.ts'
 
 export default {
-  components: {
-  },
+  components: {},
   setup() {
-    provide('snackbar', snackbar);
-    provide('showSnackbar', showSnackbar);
+    provide('snackbar', snackbar)
+    provide('showSnackbar', showSnackbar)
   },
-};
+}
 </script>

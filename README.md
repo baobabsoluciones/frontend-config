@@ -43,13 +43,13 @@ The main application component that sets up the router view and provides snackba
 
 ### Views
 
-- **LoginView.vue**: Login page.
-- **IndexView.vue**: Index page.
+- **LoginView.vue**: Login page. It contains the component `LoginSignup.vue` where all the logic and style is found.
+- **IndexView.vue**: This page serves as the main entry point for authenticated users. It includes the main application drawer (`AppDrawer.vue`) and the core application view (`AppView.vue`) that uses router-view. It also checks if the user is authenticated and initializes the general store data if they are.
 - **MainView.vue**: Main content page. This is a template and should be replaced with your main view. Name of the component can be updated to the project's needs.
 
 ### Components
 
-- **AppView.vue**: Main application component view.
+- **AppView.vue**: This component serves as the core view container for the application. It uses Vue Router's <router-view> to dynamically render the matched component for the current route. The v-slot directive is used to access the Component being rendered, and the <keep-alive> component is used to cache inactive components to preserve their state.
 - **LoginSignup.vue**: Login and signup component.
 - **AppDrawer.vue**: Application drawer component. This should be updated with all the pages needed for the project.
 
@@ -79,7 +79,7 @@ Located in `src/repositories/`: Intended for data access logic.
 
 Located in `src/config.ts`:
 
-Defines configuration settings such as backend URL and signup enablement.
+Defines configuration settings such as backend URL and signup enablement. If enableSignup is true, sign up is shown in the login component.
 Backend url should be updated in `.env`.
 
 ### API
