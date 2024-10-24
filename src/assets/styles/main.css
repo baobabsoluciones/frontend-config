@@ -1,0 +1,48 @@
+.main-container {
+  margin-left: 56px;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.view-container {
+  padding: 40px 60px 60px 60px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+.primary-btn {
+  background-color: var(--primary-variant);
+  color: white;
+  border: none;
+  outline: 0;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  font-style: normal;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.secondary-btn {
+  color: var(--primary-variant);
+  border: none;
+  outline: 0;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  font-style: normal;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.title {
+  font-size: 1em ;
+  font-weight: 500;
+}
+
